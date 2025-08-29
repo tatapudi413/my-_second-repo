@@ -1,9 +1,48 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-welcome
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Donation</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<p>
-welcome to html</P>
-<body>this is programming
+<body>
+    <header>
+        <h1>Food Donation Project</h1>
+        <p>Help us fight hunger. Your donation makes a difference!</p>
+    </header>
+
+    <main>
+        <section class="donation-form-container">
+            <h2>Donate Food</h2>
+            <form id="donation-form">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="food-items">Food Items to Donate:</label>
+                    <textarea id="food-items" name="food-items" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="pickup-address">Pickup Address:</label>
+                    <textarea id="pickup-address" name="pickup-address" rows="3" required></textarea>
+                </div>
+                <button type="submit">Submit Donation</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Food Donation Project. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
